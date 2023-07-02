@@ -75,46 +75,54 @@ function App() {
         </section>
 
         <section id='about'>
-          <h2>A little about me...</h2>
-          <p>Welcome to my website! My name is Logan, and I've been designing and building web applications for over 5 years. What started in high school as a bit of fun using HTML and CSS to create hilariously awful websites, has turned into a passion for creating visually stunning and user friendly digital experiences.</p>
-          <p>Now, I study Software Development and Data Science at university, and have had the privilege of working with a couple great small business owners, creating the perfect digital solution to suit their needs.</p>
-          <img src={aboutImage} alt='about image'></img>
-          <img src={arrowDown} alt='downwards arrow'></img>
+          <div>
+            <h2>A little about me...</h2>
+            <p>Welcome to my website! My name is Logan, and I've been designing and building web applications for over 5 years. What started in high school as a bit of fun using HTML and CSS to create hilariously awful websites, has turned into a passion for creating visually stunning and user friendly digital experiences.</p>
+            <p>Now, I study Software Development and Data Science at university, and have had the privilege of working with a couple great small business owners, creating the perfect digital solution to suit their needs.</p>
+            <img src={aboutImage} alt='about image'></img>
+            <img src={arrowDown} alt='downwards arrow'></img>
+          </div>
         </section>
 
         <section id='portfolio'>
-          <h2>My Portfolio</h2>
-          <PortfolioWork {...notepadio}></PortfolioWork>
-          <PortfolioWork {...scribblenotes}></PortfolioWork>
+          <div>
+            <h2>My Portfolio</h2>
+            <PortfolioWork {...notepadio}></PortfolioWork>
+            <PortfolioWork {...scribblenotes}></PortfolioWork>
+          </div>
         </section>
 
         <section id='contact'>
-          <h2>Get In Contact</h2>
-          <p>Want to work with me?</p>
-          <p>Get in contact via:</p>
-          <button>email</button>
-          <span className='vertical-divider'></span>
-          <button>phone</button>
-          <p>My other links:</p>
-          <img src={githubIcon} alt='github icon' onClick={() => { window.open('https://github.com/logan-wood', '_blank') }}></img>
-          <img src={linkedinIcon} alt='linkedin icon' onClick={() => { window.open('https://www.linkedin.com/in/logan-wood-dev/', '_blank') }}></img>
+          <div>
+            <h2>Get In Contact</h2>
+            <p>Want to work with me?</p>
+            <p>Get in contact via:</p>
+            <button>email</button>
+            <span className='vertical-divider'></span>
+            <button>phone</button>
+            <p>My other links:</p>
+            <img src={githubIcon} alt='github icon' onClick={() => { window.open('https://github.com/logan-wood', '_blank') }}></img>
+            <img src={linkedinIcon} alt='linkedin icon' onClick={() => { window.open('https://www.linkedin.com/in/logan-wood-dev/', '_blank') }}></img>
+          </div>
         </section>
 
         <footer>
-          <span className='divider-line'></span>
           <div>
-            <p>© 2023 Logan Wood</p>
-            <p>logan.loganwood@gmail.com<br></br>0226945092</p>
-            <img src={githubIcon} alt='github icon' onClick={() => { window.open('https://github.com/logan-wood', '_blank') }}></img>
-            <img src={linkedinIcon} alt='linkedin icon' onClick={() => { window.open('https://www.linkedin.com/in/logan-wood-dev/', '_blank') }}></img>
-            <p>Thank you for viewing!</p>
-          </div>
-          <div>
-            <button>home</button>
-            <button>about</button>
-            <button>portfolio</button>
-            <button>contact</button>
-            <button>back to top</button>
+            <span className='divider-line'></span>
+            <div>
+              <p>© 2023 Logan Wood</p>
+              <p>logan.loganwood@gmail.com<br></br>0226945092</p>
+              <img src={githubIcon} alt='github icon' onClick={() => { window.open('https://github.com/logan-wood', '_blank') }}></img>
+              <img src={linkedinIcon} alt='linkedin icon' onClick={() => { window.open('https://www.linkedin.com/in/logan-wood-dev/', '_blank') }}></img>
+              <p>Thank you for viewing!</p>
+            </div>
+            <div>
+              <button>home</button>
+              <button>about</button>
+              <button>portfolio</button>
+              <button>contact</button>
+              <button>back to top</button>
+            </div>
           </div>
         </footer>
 

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
 
 .App {
   margin: 0;
@@ -8,9 +9,21 @@
   display: flex;
 }
 
-p, h1, h2, h3 {
+#page {
+  display: inline;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+section div, footer div {
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+p, h2, h3 {
   color: white;
   font-family: 'Inter', sans-serif;
+  margin: 0;
 }
 
 button {
@@ -23,6 +36,7 @@ button {
 nav {
   position: sticky;
   overflow-y: auto;
+  overflow-x: hidden;
   margin-left: auto;
   top: 0;
   right: 0;
@@ -147,7 +161,66 @@ nav img:hover {
   cursor: pointer;
 }
 
-#page {
-  display: inline;
-  width: 100%;
+/* PAGE CONTENT */
+
+#home {
+  height: 100vh;
+}
+
+#home div {
+  width: 80%;
+  max-width: 700px;
+  background-color: #FEFFFF;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  box-shadow: 20px 15px 0px #598392;
+}
+
+#home h1, #home p, #home h3, #home button {
+  color: black;
+  margin: 0 100px 0 50px;
+}
+
+h1 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 5em;
+  text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+#home p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.8em;
+  padding-top: 120px;
+}
+
+#home h3 {
+  opacity: 0.5;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.8em;
+  margin-top: 60px
+}
+
+#home button {
+  margin-top: 60px;
+  padding: 20px 50px;
+  background-color: #97DEF8;
+  color: black;
+  font-family: 'Inconsolata', monospace;
+  opacity: 0.5;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+#home button:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 3px #cff0fc;
+  transition: 0.3s ease;
+}
+
+/* ABOUT */
+
+#about {
+  background-color: #232525;
 }
