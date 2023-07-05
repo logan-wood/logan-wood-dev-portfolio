@@ -15,7 +15,7 @@
   margin: 0 auto;
 }
 
-section div, footer div {
+.content {
   max-width: 70vw;
   margin: 0 auto;
 }
@@ -24,6 +24,10 @@ p, h2, h3 {
   color: white;
   font-family: 'Inter', sans-serif;
   margin: 0;
+}
+
+h2 {
+  font-size: 2.75em;
 }
 
 button {
@@ -145,8 +149,15 @@ nav div:not(.active) {
   padding: 16px 32px;
   color: black;
   border-radius: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.75);
+  border: 2px solid rgba(0, 0, 0, 0.5);
   background: #F8A897; 
+  transition: 0.3s ease;
+}
+
+#contact-btn:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: 0.3s ease;
 }
 
 nav img {
@@ -165,6 +176,7 @@ nav img:hover {
 
 #home {
   height: 100vh;
+  min-height: 800px;
   background-image: url('./assets/images/home-bg.png')
 }
 
@@ -226,4 +238,55 @@ h1 {
 
 #about {
   background-color: #232525;
+}
+
+#about div {
+  padding: 32px 0;
+}
+
+#about .row {
+  position: relative
+}
+
+#about .left-col {
+  display: inline-block;
+  width: 60%;
+  padding: 0;
+}
+
+.about-img {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  min-width: 250px;
+  width: 30%;
+  height: auto;
+  vertical-align: top;
+}
+
+.down-arrow {
+  display: block;
+  margin: 0 auto;
+  height: 20px;
+}
+
+.down-arrow:hover {
+  cursor: pointer;
+}
+
+#about button {
+  margin: 10% 0;
+  padding: 20px 50px;
+  background-color: #ced155;
+  color: black;
+  font-family: 'Inconsolata', monospace;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+#about button:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: 0.3s ease;
 }

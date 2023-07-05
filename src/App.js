@@ -75,17 +75,24 @@ function App() {
         </section>
 
         <section id='about'>
-          <div>
+          <div className='content'>
             <h2>A little about me...</h2>
-            <p>Welcome to my website! My name is Logan, and I've been designing and building web applications for over 5 years. What started in high school as a bit of fun using HTML and CSS to create hilariously awful websites, has turned into a passion for creating visually stunning and user friendly digital experiences.</p>
-            <p>Now, I study Software Development and Data Science at university, and have had the privilege of working with a couple great small business owners, creating the perfect digital solution to suit their needs.</p>
-            <img src={aboutImage} alt='about image'></img>
-            <img src={arrowDown} alt='downwards arrow'></img>
+            <div className='row'>
+              <div className='left-col'>
+                <p>Welcome to my website! My name is Logan, and I've been designing and building web applications for over 5 years. What started in high school as a bit of fun using HTML and CSS to create hilariously awful websites, has turned into a passion for creating visually stunning and user friendly digital experiences.
+                <br></br>
+                Now, I study Software Development and Data Science at university, and have had the privilege of working with a couple great small business owners, creating the perfect digital solution to suit their needs.
+                </p>
+                <button>Get In Contact</button>
+              </div>
+            <img className='about-img' src={aboutImage} alt='about'></img>
+            </div>
+            <img className='down-arrow' src={arrowDown} alt='downwards arrow'></img>
           </div>
         </section>
 
         <section id='portfolio'>
-          <div>
+          <div className='content'>
             <h2>My Portfolio</h2>
             <PortfolioWork {...notepadio}></PortfolioWork>
             <PortfolioWork {...scribblenotes}></PortfolioWork>
@@ -93,7 +100,7 @@ function App() {
         </section>
 
         <section id='contact'>
-          <div>
+          <div className='content'>
             <h2>Get In Contact</h2>
             <p>Want to work with me?</p>
             <p>Get in contact via:</p>
@@ -107,7 +114,7 @@ function App() {
         </section>
 
         <footer>
-          <div>
+          <div className='content'>
             <span className='divider-line'></span>
             <div>
               <p>© 2023 Logan Wood</p>
