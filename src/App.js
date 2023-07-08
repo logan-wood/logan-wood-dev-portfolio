@@ -101,35 +101,52 @@ function App() {
 
         <section id='contact'>
           <div className='content'>
+
             <h2>Get In Contact</h2>
             <p>Want to work with me?</p>
             <p>Get in contact via:</p>
-            <button>email</button>
-            <span className='vertical-divider'></span>
-            <button>phone</button>
+
+            <div className='row'>
+              <button>email</button>
+              <span className='vertical-divider'></span>
+              <button id='phone'>phone</button>
+            </div>
+
             <p>My other links:</p>
-            <img src={githubIcon} alt='github icon' onClick={() => { window.open('https://github.com/logan-wood', '_blank') }}></img>
-            <img src={linkedinIcon} alt='linkedin icon' onClick={() => { window.open('https://www.linkedin.com/in/logan-wood-dev/', '_blank') }}></img>
+
+            <div className='row icons'>
+              <img src={githubIcon} alt='github icon' onClick={() => { window.open('https://github.com/logan-wood', '_blank') }}></img>
+              <img src={linkedinIcon} alt='linkedin icon' onClick={() => { window.open('https://www.linkedin.com/in/logan-wood-dev/', '_blank') }}></img>
+            </div>
+
           </div>
         </section>
 
         <footer>
+
           <div className='content'>
             <span className='divider-line'></span>
-            <div>
-              <p>© 2023 Logan Wood</p>
-              <p>logan.loganwood@gmail.com<br></br>0226945092</p>
-              <img src={githubIcon} alt='github icon' onClick={() => { window.open('https://github.com/logan-wood', '_blank') }}></img>
-              <img src={linkedinIcon} alt='linkedin icon' onClick={() => { window.open('https://www.linkedin.com/in/logan-wood-dev/', '_blank') }}></img>
-              <p>Thank you for viewing!</p>
+
+            <div className='footer-columns-container'>
+              <div>
+                <p>© 2023 Logan Wood</p>
+                <p>logan.loganwood@gmail.com<br></br>0226945092</p>
+                <img className='icon' src={githubIcon} alt='github icon' onClick={() => { window.open('https://github.com/logan-wood', '_blank') }}></img>
+                <img className='icon' src={linkedinIcon} alt='linkedin icon' onClick={() => { window.open('https://www.linkedin.com/in/logan-wood-dev/', '_blank') }}></img>
+                <p className='align-bottom'>Thank you for viewing!</p>
+              </div>
+
+              <div className='footer-nav'>
+                <div>
+                  <button>home</button>
+                  <button>about</button>
+                  <button>portfolio</button>
+                  <button>contact</button>
+                </div>
+                <button id='back-to-top'>back to top</button>
+              </div>
             </div>
-            <div>
-              <button>home</button>
-              <button>about</button>
-              <button>portfolio</button>
-              <button>contact</button>
-              <button>back to top</button>
-            </div>
+
           </div>
         </footer>
 

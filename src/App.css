@@ -298,3 +298,124 @@ h1 {
   align-items: center;
   flex-direction: column;
 }
+
+/* CONTACT */
+
+#contact {
+  background-color: #232525;
+}
+
+#contact .content {
+  padding: 96px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact h2 {
+  margin-bottom: 32px;
+}
+
+#contact p {
+  opacity: 0.5;
+}
+
+#contact .row {
+  width: 80%;
+  text-align: center;
+}
+
+#contact button {
+  margin: 10%;
+  padding: 20px 60px;
+  background-color: #FFAB99;
+  color: rgb(0, 0, 0, 0.5);
+  font-family: 'Inconsolata', monospace;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+#contact button:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: 0.3s ease;
+}
+
+#phone {
+  background-color: #97DEF8 !important;
+}
+
+.vertical-divider {
+  width: 1px;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.icons img {
+  margin: 32px 24px;
+  opacity: 0.5;
+  height: 48px;
+  width: auto;
+  transition: 0.3s ease;
+}
+
+.icons img:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* FOOTER */
+footer {
+  background-color: #232525;
+}
+
+.footer-columns-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+footer p {
+  margin-bottom: 16px;
+
+}
+
+footer .icon {
+  width: 24px;
+  margin-right: 8px;
+  opacity: 0.8;
+}
+
+footer .icon:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-nav button {
+  opacity: 0.5;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 4px;
+  transition: 0.3s ease;
+}
+.footer-nav button:hover {
+  cursor: pointer;
+  opacity: 1;
+  color: #F8A897;
+  transition: 0.3s ease;
+}
+
+.align-bottom {
+  margin: 32px 0 0 0;
+}
