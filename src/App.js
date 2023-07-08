@@ -43,6 +43,16 @@ function App() {
     }  
   }
 
+  function openClientEmail() {
+    const email = 'logan.loganwood@gmail.com';
+    const subject = 'Web Development Enquiry';
+    const body = 'Hello, I would like to inquire about your services.';
+  
+    const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  
+    window.location.href = (mailtoURL);
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -109,7 +119,9 @@ function App() {
             <p>Hi, my name is</p>
             <h1>Logan Wood</h1>
             <h3>I bring ideas to life through code</h3>
-            <button>see my work</button>
+            <button onClick={(e) => {
+              $('#portfolio')[0].scrollIntoView({ behavior: 'smooth' })
+            }}>see my work</button>
           </div>
         </section>
 
@@ -122,7 +134,9 @@ function App() {
                 <br></br><br></br>
                 Now, I study Software Development and Data Science at university, and have had the privilege of working with a couple great small business owners, creating the perfect digital solution to suit their needs.
                 </p>
-                <button>Get In Contact</button>
+                <button onClick={(e) => {
+                  $('#contact')[0].scrollIntoView({ behavior: 'smooth' })
+                }}>Get In Contact</button>
               </div>
             <img className='about-img' src={aboutImage} alt='about'></img>
             </div>
@@ -146,7 +160,7 @@ function App() {
             <p>Get in contact via:</p>
 
             <div className='row'>
-              <button>email</button>
+              <button onClick={openClientEmail}>email</button>
               <span className='vertical-divider'></span>
               <button id='phone'>phone</button>
             </div>
@@ -177,12 +191,23 @@ function App() {
 
               <div className='footer-nav'>
                 <div>
-                  <button>home</button>
-                  <button>about</button>
-                  <button>portfolio</button>
-                  <button>contact</button>
+                  <button onClick={(e) => {
+                    $('#home')[0].scrollIntoView({ behavior: 'smooth' })
+                    }}>home</button>
+                  <button onClick={(e) => {
+                    $('#about')[0].scrollIntoView({ behavior: 'smooth' })
+                    }}>about</button>
+                  <button onClick={(e) => {
+                    $('#portfolio')[0].scrollIntoView({ behavior: 'smooth' })
+                    }}>portfolio</button>
+                  <button onClick={(e) => {
+                    $('#contact')[0].scrollIntoView({ behavior: 'smooth' })
+                    }}>contact</button>
                 </div>
-                <button id='back-to-top'>back to top</button>
+
+                <button id='back-to-top' onClick={(e) => {
+                  $('#home')[0].scrollIntoView({ behavior: 'smooth' })
+                  }}>back to top</button>
               </div>
             </div>
 
