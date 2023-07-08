@@ -80,7 +80,7 @@ function App() {
             <div className='row'>
               <div className='left-col'>
                 <p>Welcome to my website! My name is Logan, and I've been designing and building web applications for over 5 years. What started in high school as a bit of fun using HTML and CSS to create hilariously awful websites, has turned into a passion for creating visually stunning and user friendly digital experiences.
-                <br></br>
+                <br></br><br></br>
                 Now, I study Software Development and Data Science at university, and have had the privilege of working with a couple great small business owners, creating the perfect digital solution to suit their needs.
                 </p>
                 <button>Get In Contact</button>
