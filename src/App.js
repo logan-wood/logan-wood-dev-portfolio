@@ -7,17 +7,18 @@ import linkedinIcon from './assets/icons/linkedin.svg';
 import aboutImage from './assets/images/about-image.png';
 import PortfolioWork from './assets/components/PortfolioWork';
 import notepadImage from './assets/images/notepad-io.jpg';
-import scribblenotesImage from './assets/images/scribblenotes.jpg'
+import scribblenotesImage from './assets/images/scribblenotes.jpg';
+import { useEffect } from 'react';
 import $ from 'jquery'
 
 
 function App() {
-  function setActiveNavItem(e) {
+  function setActiveNavItem(target) {
     // Remove active class from current active div and its children
     $('.nav-content .active').removeClass('active');
   
     // Add active class to the clicked button and its parent div
-    const clickedButton = $(e.target);
+    const clickedButton = $(target);
     clickedButton.addClass('active');
     clickedButton.parent().addClass('active');
     clickedButton.prev('span').addClass('active');
@@ -41,6 +42,44 @@ function App() {
       });
     }  
   }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+
+      // Get the sections and their offsets from the top of the page
+      const homeSection = document.getElementById('home');
+      const aboutSection = document.getElementById('about');
+      const portfolioSection = document.getElementById('portfolio');
+      const contactSection = document.getElementById('contact');
+
+      const homeOffset = homeSection.offsetTop - 200;
+      const aboutOffset = aboutSection.offsetTop - 200;
+      const portfolioOffset = portfolioSection.offsetTop - 200;
+
+      // Calculate the visible section based on the scroll position
+      let visibleSection = '';
+
+      if (scrollPosition >= homeOffset && scrollPosition < aboutOffset) {
+        visibleSection = 'home';
+      } else if (scrollPosition >= aboutOffset && scrollPosition < portfolioOffset) {
+        visibleSection = 'about';
+      } else {
+        visibleSection = 'portfolio';
+      } 
+
+      // Update the classList of the nav buttons based on the visible section
+      setActiveNavItem($('#' + visibleSection + '-btn')[0])
+    }
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const notepadio = {
     title: 'Notepad.io',
@@ -158,17 +197,28 @@ function App() {
             <p className='logo'>&lt;/&gt;</p>
             <div className='active'>
               <span className='active'>&gt;</span>
-              <button className='active' onClick={(e) => {setActiveNavItem(e)}}>home</button>
+              <button id="home-btn" className='active' onClick={(e) => {
+                setActiveNavItem(e.target)
+                $('#home')[0].scrollIntoView({ behavior: 'smooth' })
+                }}>home</button>
             </div>
             <div>
-              <span>&gt;</span>
-              <button onClick={(e) => {setActiveNavItem(e)}}>about me</button>
+              <span >&gt;</span>
+              <button id="about-btn" onClick={(e) => {
+                setActiveNavItem(e.target)
+                $('#about')[0].scrollIntoView({ behavior: 'smooth' })
+                }}>about me</button>
             </div>
             <div>
-              <span>&gt;</span>
-              <button onClick={(e) => {setActiveNavItem(e)}}>portfolio</button>
+              <span >&gt;</span>
+              <button id="portfolio-btn" onClick={(e) => {
+                setActiveNavItem(e.target)
+                $('#portfolio')[0].scrollIntoView({ behavior: 'smooth' })
+                }}>portfolio</button>
             </div>
-            <button id='contact-btn'>contact</button>
+            <button id='contact-btn' onClick={(e) => {
+              $('#contact')[0].scrollIntoView({ behavior: 'smooth' })
+            }}>contact</button>
             <img src={sidenavIcon} onClick={() => {toggleSideNav()}} alt='close-sidenav'></img>
           </div>
         </nav>
