@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/logan-wood-dev-portfolio/static/css/main.d630482c.css",
-    "main.js": "/logan-wood-dev-portfolio/static/js/main.2a7d535c.js",
+    "main.css": "/logan-wood-dev-portfolio/static/css/main.14b34c66.css",
+    "main.js": "/logan-wood-dev-portfolio/static/js/main.ea1896ba.js",
     "static/js/787.5ead1618.chunk.js": "/logan-wood-dev-portfolio/static/js/787.5ead1618.chunk.js",
     "static/media/notepad-io.jpg": "/logan-wood-dev-portfolio/static/media/notepad-io.336e9894f0fe0870ff8b.jpg",
     "static/media/scribblenotes.jpg": "/logan-wood-dev-portfolio/static/media/scribblenotes.a29832045bf0442a24d1.jpg",
@@ -12,12 +12,12 @@
     "static/media/sidenav.svg": "/logan-wood-dev-portfolio/static/media/sidenav.7c8076b7cbbad0c5f82eff3d48b9f099.svg",
     "static/media/arrow-left.svg": "/logan-wood-dev-portfolio/static/media/arrow-left.4f97dcdf0a832061112603e05e96c29a.svg",
     "static/media/arrow-down.svg": "/logan-wood-dev-portfolio/static/media/arrow-down.5b0193a363d7b63a7dccd59d1dd70296.svg",
-    "main.d630482c.css.map": "/logan-wood-dev-portfolio/static/css/main.d630482c.css.map",
-    "main.2a7d535c.js.map": "/logan-wood-dev-portfolio/static/js/main.2a7d535c.js.map",
+    "main.14b34c66.css.map": "/logan-wood-dev-portfolio/static/css/main.14b34c66.css.map",
+    "main.ea1896ba.js.map": "/logan-wood-dev-portfolio/static/js/main.ea1896ba.js.map",
     "787.5ead1618.chunk.js.map": "/logan-wood-dev-portfolio/static/js/787.5ead1618.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d630482c.css",
-    "static/js/main.2a7d535c.js"
+    "static/css/main.14b34c66.css",
+    "static/js/main.ea1896ba.js"
   ]
 }
