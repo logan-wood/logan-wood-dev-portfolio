@@ -8,11 +8,13 @@ import aboutImage from './assets/images/about-image.png';
 import PortfolioWork from './assets/components/PortfolioWork';
 import notepadImage from './assets/images/notepad-io.jpg';
 import scribblenotesImage from './assets/images/scribblenotes.jpg';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import $ from 'jquery'
 
 
 function App() {
+  const [buttonText, setButtonText] = useState('phone');
+
   function setActiveNavItem(target) {
     // Remove active class from current active div and its children
     $('.nav-content .active').removeClass('active');
@@ -26,7 +28,6 @@ function App() {
 
   function toggleSideNav() {
     if ($('nav').hasClass('active')) {
-      console.log('has active')
       // toggle class then show content
       $('nav').toggleClass('active');
       $('.open-nav').toggleClass('active');
@@ -51,6 +52,12 @@ function App() {
     const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   
     window.location.href = (mailtoURL);
+  }
+
+  function openPhone() {
+    const phoneNumber = '0226945092';
+    window.location.href = `tel:${phoneNumber}`;
+    setButtonText(phoneNumber);
   }
 
   useEffect(() => {
@@ -84,6 +91,15 @@ function App() {
 
     // Attach the scroll event listener
     window.addEventListener('scroll', handleScroll);
+
+    // Check screen size to see if nav should display
+    if (window.innerWidth <= 900) {
+      $('nav').addClass('active')
+
+      $('.open-nav').addClass('active')
+
+      $('.nav-content').css({opacity: 0} )
+    }
 
     // Cleanup the event listener on component unmount
     return () => {
@@ -162,7 +178,7 @@ function App() {
             <div className='row'>
               <button onClick={openClientEmail}>email</button>
               <span className='vertical-divider'></span>
-              <button id='phone'>phone</button>
+              <button id='phone' onClick={openPhone}>{buttonText}</button>
             </div>
 
             <p>My other links:</p>

@@ -19,7 +19,7 @@ function PortfolioWork(props) {
 
             <div className='row'>
                 <p className='technologies'>{props.technologies}</p>
-                <div className='row'>
+                <div className='icons'>
                     <img className='icon' src={openIcon} alt='open project' onClick={() => { window.open(props.url, '_blank') }}></img>
                     <img className='icon' src={githubIcon} alt='github icon' onClick={() => { window.open(props.github_url, '_blank') }}></img>
                 </div>

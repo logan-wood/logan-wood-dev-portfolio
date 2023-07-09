@@ -258,7 +258,6 @@ h1 {
   display: inline-block;
   position: absolute;
   right: 0;
-  min-width: 250px;
   width: 30%;
   height: auto;
   vertical-align: top;
@@ -418,4 +417,44 @@ footer .icon:hover {
 
 .align-bottom {
   margin: 32px 0 0 0;
+}
+
+@media screen and (max-width: 900px) {
+  #page {
+    margin-right: 64px;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  #home div {
+    max-height: 90vh;
+  }
+
+  .content {
+    max-width: 90%;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  #about .left-col {
+    width: 100%;
+  }
+
+  #about button {
+    display: block;
+    margin: 32px auto;
+  }
+
+  #contact .vertical-divider {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5)
+  }
 }
