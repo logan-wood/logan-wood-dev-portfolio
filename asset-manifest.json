@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/logan-wood-dev-portfolio/static/css/main.77b62309.css",
+    "main.css": "/logan-wood-dev-portfolio/static/css/main.bda07914.css",
     "main.js": "/logan-wood-dev-portfolio/static/js/main.e7d0e809.js",
     "static/js/787.5ead1618.chunk.js": "/logan-wood-dev-portfolio/static/js/787.5ead1618.chunk.js",
     "static/media/scribblenotes.jpg": "/logan-wood-dev-portfolio/static/media/scribblenotes.97ae1894490644ffa6ff.jpg",
@@ -12,12 +12,12 @@
     "static/media/sidenav.svg": "/logan-wood-dev-portfolio/static/media/sidenav.7c8076b7cbbad0c5f82eff3d48b9f099.svg",
     "static/media/arrow-left.svg": "/logan-wood-dev-portfolio/static/media/arrow-left.b4a9791907cf9527a77285f79528186b.svg",
     "static/media/arrow-down.svg": "/logan-wood-dev-portfolio/static/media/arrow-down.5b0193a363d7b63a7dccd59d1dd70296.svg",
-    "main.77b62309.css.map": "/logan-wood-dev-portfolio/static/css/main.77b62309.css.map",
+    "main.bda07914.css.map": "/logan-wood-dev-portfolio/static/css/main.bda07914.css.map",
     "main.e7d0e809.js.map": "/logan-wood-dev-portfolio/static/js/main.e7d0e809.js.map",
     "787.5ead1618.chunk.js.map": "/logan-wood-dev-portfolio/static/js/787.5ead1618.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77b62309.css",
+    "static/css/main.bda07914.css",
     "static/js/main.e7d0e809.js"
   ]
 }
