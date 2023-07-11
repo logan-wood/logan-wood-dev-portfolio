@@ -27,9 +27,10 @@ function App() {
   }
 
   function toggleSideNav() {
-    if ($('nav').hasClass('active')) {
+    if ($('nav').hasClass('small')) {
+      // open nav
       // toggle class then show content
-      $('nav').toggleClass('active');
+      $('nav').toggleClass('small');
       $('.open-nav').toggleClass('active');
 
       setTimeout(() => {
@@ -37,8 +38,9 @@ function App() {
       }, 600)
       
     } else {
+      // close nav
       $('.nav-content').animate({opacity: 0}, 300, () => {
-        $('nav').toggleClass('active');
+        $('nav').toggleClass('small');
         $('.open-nav').toggleClass('active');
       });
     }  
@@ -93,12 +95,12 @@ function App() {
     window.addEventListener('scroll', handleScroll);
 
     // Check screen size to see if nav should display
-    if (window.innerWidth <= 900) {
-      $('nav').addClass('active')
+    if (window.innerWidth >= 900) {
+      $('nav').removeClass('small')
 
-      $('.open-nav').addClass('active')
+      $('.open-nav').removeClass('active')
 
-      $('.nav-content').css({opacity: 0} )
+      $('.nav-content').css({opacity: 1} )
     }
 
     // Cleanup the event listener on component unmount
@@ -134,7 +136,7 @@ function App() {
           <div>
             <p>Hi, my name is</p>
             <h1>Logan Wood</h1>
-            <h3>I bring ideas to life through code</h3>
+            <h3>I create captivating digital experiences</h3>
             <button onClick={(e) => {
               $('#portfolio')[0].scrollIntoView({ behavior: 'smooth' })
             }}>see my work</button>
@@ -232,9 +234,9 @@ function App() {
 
       </div>
 
-      <nav> 
-          <img src={arrowLeft} className='open-nav' alt='right arrow' onClick={() => { toggleSideNav() }}></img>
-          <div className='nav-content'>
+      <nav className='small'> 
+          <img src={arrowLeft} className='open-nav active' alt='right arrow' onClick={() => { toggleSideNav() }}></img>
+          <div className='nav-content hide'>
             <p className='logo'>&lt;/&gt;</p>
             <div className='active'>
               <span className='active'>&gt;</span>

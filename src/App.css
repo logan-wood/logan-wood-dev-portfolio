@@ -52,8 +52,8 @@ nav {
   transition: width 0.5s ease;
 }
 
-nav.active {
-  width: 64px;
+nav.small {
+  width: 32px;
   pointer-events: none;
   transition: width 0.5s ease;
 }
@@ -63,7 +63,7 @@ nav.active {
   top: 50%;
   left: 50%;
   transform: translate(-50%);
-  width: 24px;
+  width: 12px;
   height: auto;
   pointer-events: all !important;
   opacity: 0;
@@ -83,7 +83,7 @@ nav.active {
   height: 100vh;
   margin: 0 auto;
   transition: 0.1s ease;
-  opacity: 1;
+  opacity: 0;
 }
 
 .nav-content.hide {
@@ -113,6 +113,7 @@ nav button:hover {
 }
 
 nav span {
+  color: #F8A897;
   display: inline;
   opacity: 0;
   transition: 0.5s ease;
@@ -325,8 +326,9 @@ h1 {
 }
 
 #contact button {
+  width: 150px;
   margin: 10%;
-  padding: 20px 60px;
+  padding: 20px 40px;
   background-color: #FFAB99;
   color: rgb(0, 0, 0, 0.5);
   font-family: 'Inconsolata', monospace;
@@ -421,9 +423,21 @@ footer .icon:hover {
 
 @media screen and (max-width: 900px) {
   #page {
-    margin-right: 64px;
+    margin-right: 32px;
   }
   
+  h1 {
+    margin-right: 32px !important;
+    font-size: 3.8em !important;
+  }
+
+  #home h3 {
+    font-size: 1.5em !important;
+  }
+
+  #home button {
+  }
+
   nav {
     position: fixed;
     top: 0;
