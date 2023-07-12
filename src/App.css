@@ -53,7 +53,7 @@ nav {
 }
 
 nav.small {
-  width: 32px;
+  width: 64px;
   pointer-events: none;
   transition: width 0.5s ease;
 }
@@ -435,13 +435,18 @@ footer .icon:hover {
     font-size: 1.5em !important;
   }
 
-  #home button {
-  }
-
   nav {
     position: fixed;
     top: 0;
     right: 0;
+  }
+
+  nav.small {
+    width: 32px;
+  }
+
+  .open-nav {
+    width: 12px;
   }
 
   #home div {

@@ -158,7 +158,9 @@ function App() {
               </div>
             <img className='about-img' src={aboutImage} alt='about'></img>
             </div>
-            <img className='down-arrow' src={arrowDown} alt='downwards arrow'></img>
+            <img className='down-arrow' src={arrowDown} alt='downwards arrow' onClick={() => {
+              $('#portfolio')[0].scrollIntoView({ behavior: 'smooth' })}}>
+            </img>
           </div>
         </section>
 
@@ -174,7 +176,7 @@ function App() {
           <div className='content'>
 
             <h2>Get In Contact</h2>
-            <p>Want to work with me?</p>
+            <p>Want to work with me?</p><br></br>
             <p>Get in contact via:</p>
 
             <div className='row'>
