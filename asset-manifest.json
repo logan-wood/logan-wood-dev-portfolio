@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/logan-wood-dev-portfolio/static/css/main.5d2f9433.css",
-    "main.js": "/logan-wood-dev-portfolio/static/js/main.9bdec439.js",
-    "static/js/787.5ead1618.chunk.js": "/logan-wood-dev-portfolio/static/js/787.5ead1618.chunk.js",
-    "static/media/scribblenotes.jpg": "/logan-wood-dev-portfolio/static/media/scribblenotes.97ae1894490644ffa6ff.jpg",
-    "static/media/notepad-io.jpg": "/logan-wood-dev-portfolio/static/media/notepad-io.482e9ce6e698acc79ce4.jpg",
-    "static/media/github.svg": "/logan-wood-dev-portfolio/static/media/github.1437c375ddcd795db23f34a87fc323b3.svg",
-    "static/media/open.svg": "/logan-wood-dev-portfolio/static/media/open.21dcb5af5738bda48c40e753f79d7265.svg",
-    "static/media/linkedin.svg": "/logan-wood-dev-portfolio/static/media/linkedin.41bb92dbc1e125948d08280702da7292.svg",
-    "index.html": "/logan-wood-dev-portfolio/index.html",
-    "static/media/sidenav.svg": "/logan-wood-dev-portfolio/static/media/sidenav.7c8076b7cbbad0c5f82eff3d48b9f099.svg",
-    "static/media/arrow-left.svg": "/logan-wood-dev-portfolio/static/media/arrow-left.b4a9791907cf9527a77285f79528186b.svg",
-    "static/media/arrow-down.svg": "/logan-wood-dev-portfolio/static/media/arrow-down.5b0193a363d7b63a7dccd59d1dd70296.svg",
-    "main.5d2f9433.css.map": "/logan-wood-dev-portfolio/static/css/main.5d2f9433.css.map",
-    "main.9bdec439.js.map": "/logan-wood-dev-portfolio/static/js/main.9bdec439.js.map",
-    "787.5ead1618.chunk.js.map": "/logan-wood-dev-portfolio/static/js/787.5ead1618.chunk.js.map"
+    "main.css": "/static/css/main.14b34c66.css",
+    "main.js": "/static/js/main.f03cba41.js",
+    "static/js/787.5ead1618.chunk.js": "/static/js/787.5ead1618.chunk.js",
+    "static/media/notepad-io.jpg": "/static/media/notepad-io.336e9894f0fe0870ff8b.jpg",
+    "static/media/scribblenotes.jpg": "/static/media/scribblenotes.a29832045bf0442a24d1.jpg",
+    "static/media/github.svg": "/static/media/github.1437c375ddcd795db23f34a87fc323b3.svg",
+    "static/media/open.svg": "/static/media/open.21dcb5af5738bda48c40e753f79d7265.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.41bb92dbc1e125948d08280702da7292.svg",
+    "index.html": "/index.html",
+    "static/media/sidenav.svg": "/static/media/sidenav.7c8076b7cbbad0c5f82eff3d48b9f099.svg",
+    "static/media/arrow-left.svg": "/static/media/arrow-left.4f97dcdf0a832061112603e05e96c29a.svg",
+    "static/media/arrow-down.svg": "/static/media/arrow-down.5b0193a363d7b63a7dccd59d1dd70296.svg",
+    "main.14b34c66.css.map": "/static/css/main.14b34c66.css.map",
+    "main.f03cba41.js.map": "/static/js/main.f03cba41.js.map",
+    "787.5ead1618.chunk.js.map": "/static/js/787.5ead1618.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d2f9433.css",
-    "static/js/main.9bdec439.js"
+    "static/css/main.14b34c66.css",
+    "static/js/main.f03cba41.js"
   ]
 }
