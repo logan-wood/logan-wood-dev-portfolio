@@ -9,7 +9,14 @@ function PortfolioWork(props) {
 
             <div className='row'>
                 <div className='left-col'>
-                    <h4>{props.title}</h4>
+                    {
+                        props.wip ? (
+                        <div className='wip'>
+                            <p>WIP</p>
+                            <h4>{props.title}</h4>
+                        </div>
+                        ) : (<h4>{props.title}</h4>)
+                    }
                     <p>{props.description}</p>
                 </div>
                 <img className='preview' src={props.preview} alt='preview image'></img>
@@ -20,8 +27,8 @@ function PortfolioWork(props) {
             <div className='row'>
                 <p className='technologies'>{props.technologies}</p>
                 <div className='icons'>
-                    <img className='icon' src={openIcon} alt='open project' onClick={() => { window.open(props.url, '_blank') }}></img>
-                    <img className='icon' src={githubIcon} alt='github icon' onClick={() => { window.open(props.github_url, '_blank') }}></img>
+                    {props.url != null && <img className='icon' src={openIcon} alt='open project' onClick={() => { window.open(props.url, '_blank') }}></img>}
+                    {props.github_url != null && <img className='icon' src={githubIcon} alt='github icon' onClick={() => { window.open(props.github_url, '_blank') }}></img>}
                 </div>
             </div>
 

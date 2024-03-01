@@ -8,6 +8,8 @@ import aboutImage from './assets/images/about-image.png';
 import PortfolioWork from './assets/components/PortfolioWork';
 import notepadImage from './assets/images/notepad-io.jpg';
 import scribblenotesImage from './assets/images/scribblenotes.jpg';
+import spotifyImage from './assets/images/spotify.jpeg';
+import autImage from './assets/images/aut.jpg';
 import { useEffect, useState } from 'react';
 import $ from 'jquery'
 
@@ -110,6 +112,7 @@ function App() {
   }, []);
 
   const notepadio = {
+    wip: false,
     title: 'Notepad.io',
     description: 'Built in collaboration with 4 developers, notepad.io is an online note-taking application designed to retain user attention. A point system is integrated which allows users to play a Pokemon style game while taking notes.',
     preview: notepadImage,
@@ -119,6 +122,7 @@ function App() {
   };
 
   const scribblenotes = {
+    wip: false,
     title: 'Scribblenotes',
     description: 'An all-inclusive web application which is capable of automating business processes - users can create accounts, pay for services and subscriptions through stripe and automatically generate CSV files, all through a user-friendly customer portal. An admin panel is included.',
     preview: scribblenotesImage,
@@ -126,6 +130,26 @@ function App() {
     url: 'https://github.com/logan-wood/scribblenotes',
     github_url: 'https://github.com/logan-wood/scribblenotes'
   };
+
+  const playlistPresenter = {
+    wip: true,
+    title: 'Spotify Playlist Showcase',
+    description: 'Due to a lack of a way to quickly and effectively summarize a Spotify playlist, I am developing a web app that allows users to showcase their Spotify playlists, with the ability to choose the order of music, segments to play, visuals to show, and the ability to swipe to the next track. Currently in early stages of development.',
+    preview: spotifyImage,
+    technologies: 'react.js ‧ typescript ‧ nest.js ‧ Spotify API & Web Player ‧ mysql',
+    url: 'https://spotify-playlist-showcase-static-client.onrender.com/',
+    github_url: 'https://github.com/logan-wood/Spotify-Playlist-Showcase'
+  };
+
+  const RndProject = {
+    wip: true,
+    title: 'AUT Final Year Project',
+    description: 'Working with a team of other final year students, we are increasing efficiency and productivity for our client in the Agricultural industry by leveraging vision intelligence and forecasting techniques. Vision intelligence is used to classify baby spinach leaves to assist with quality control, and an array of sensors will be used to predict appropiate machine settings across the packing line.',
+    preview: autImage,
+    technologies: 'Python ‧ Flask ‧ Tensorflow ‧ Vision Intelligence ‧ Classification ‧ Forecasting',
+    url: null,
+    github_url: null
+  } 
 
   return (
     <div className="App">
@@ -167,8 +191,10 @@ function App() {
         <section id='portfolio'>
           <div className='content'>
             <h2>My Portfolio</h2>
-            <PortfolioWork {...notepadio}></PortfolioWork>
-            <PortfolioWork {...scribblenotes}></PortfolioWork>
+            <PortfolioWork {...notepadio} />
+            <PortfolioWork {...scribblenotes} />
+            <PortfolioWork {...playlistPresenter} />
+            <PortfolioWork {...RndProject} />
           </div>
         </section>
 
