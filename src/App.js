@@ -12,6 +12,9 @@ import spotifyImage from './assets/images/spotify.jpeg';
 import autImage from './assets/images/aut.jpg';
 import { useEffect, useState } from 'react';
 import $ from 'jquery'
+import { motion } from 'framer-motion';
+import HorizontalBlock from './assets/components/HorizontalBlock';
+import VerticalBlock from './assets/components/VerticalBlock';
 
 
 function App() {
@@ -157,6 +160,10 @@ function App() {
       <div id='page'>
 
         <section id='home'>
+
+          <VerticalBlock x={50} y={50} width={50} height={120} color={'#caeefb'} scroll_speed={5} />
+
+
           <div className='welcome'>
             <p>Hi, my name is</p>
             <h1>Logan Wood</h1> 
@@ -165,6 +172,8 @@ function App() {
               $('#portfolio')[0].scrollIntoView({ behavior: 'smooth' })
             }}>see my work</button>
           </div>
+
+          <HorizontalBlock x={200} y={50} width={100} height={50} color={'#f8a897'} scroll_speed={1.5} />
         </section>
 
         <section id='about'>

@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
 
+body {
+  overflow-x: hidden
+}
+
 .App {
   margin: 0;
   padding: 0;
@@ -179,15 +183,24 @@ nav img:hover {
   height: 100vh;
   min-height: 800px;
   /* background-image: url('./assets/images/home-bg.png') */
+  position: relative;
+}
+
+.horizontal-block {
+  width: 120px;
+  height: 120px;
+  background-color: pink;
 }
 
 #home .welcome {
+  position: relative;
   width: 80%;
   max-width: 700px;
   background-color: #FEFFFF;
   margin: 0 auto;
   padding-bottom: 60px;
   box-shadow: 20px 15px 0px #598392;
+  z-index: 1;
 }
 
 #home h1, #home p, #home h3, #home button {
@@ -239,6 +252,8 @@ h1 {
 
 #about {
   background-color: #232525;
+  position: relative;
+  z-index: 1;
 }
 
 #about div {
