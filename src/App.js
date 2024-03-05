@@ -12,9 +12,10 @@ import spotifyImage from './assets/images/spotify.jpeg';
 import autImage from './assets/images/aut.jpg';
 import { useEffect, useState } from 'react';
 import $ from 'jquery'
-import { motion } from 'framer-motion';
 import HorizontalBlock from './assets/components/HorizontalBlock';
 import VerticalBlock from './assets/components/VerticalBlock';
+import { horizontalBlocks } from './assets/data/horizontalBlocks';
+import { verticalBlocks } from './assets/data/verticalBlocks';
 
 
 function App() {
@@ -161,7 +162,29 @@ function App() {
 
         <section id='home'>
 
-          <VerticalBlock x={50} y={50} width={50} height={120} color={'#caeefb'} scroll_speed={5} />
+          {horizontalBlocks.map((block, index) => {
+            return <HorizontalBlock 
+              key={index} 
+              x={block.x} 
+              y={block.y} 
+              width={block.width} 
+              height={block.height} 
+              color={block.color} 
+              scroll_speed={block.scroll_speed} 
+            />
+          })}
+          
+          {verticalBlocks.map((block, index) => {
+            return <VerticalBlock 
+              key={index} 
+              x={block.x} 
+              y={block.y} 
+              width={block.width} 
+              height={block.height} 
+              color={block.color} 
+              scroll_speed={block.scroll_speed} 
+            />
+          })}
 
 
           <div className='welcome'>
@@ -173,7 +196,6 @@ function App() {
             }}>see my work</button>
           </div>
 
-          <HorizontalBlock x={200} y={50} width={100} height={50} color={'#f8a897'} scroll_speed={1.5} />
         </section>
 
         <section id='about'>

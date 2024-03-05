@@ -1,4 +1,3 @@
-import { motion } from "framer-motion"
 import { useState, useRef, useEffect } from "react"
 
 const CANVAS_WIDTH = window.innerWidth;
@@ -26,10 +25,11 @@ function HorizontalBlock({x, y, width, height, color, scroll_speed}) {
             const newPosition = prevPosition + scroll_speed;
             
             if (CANVAS_WIDTH + width < newPosition) {
-                //reset
                 return 0 - width;
+            } else if (0 - width > newPosition) {
+                return CANVAS_WIDTH + width;
             } else {
-                return newPosition
+                return newPosition;
             }
         })
     )

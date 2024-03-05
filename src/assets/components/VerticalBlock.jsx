@@ -1,4 +1,3 @@
-import { motion } from "framer-motion"
 import { useState, useRef, useEffect } from "react"
 
 const CANVAS_HEIGHT = window.innerHeight;
@@ -21,21 +20,17 @@ const useAnimationFrame = callback => {
 function VerticalBlock({x, y, width, height, color, scroll_speed}) {
     const [position, setPosition] = useState(y);
 
-    useEffect(() => {
-        console.log('initial y: ' + y)
-        console.log('intial position: ' + position)
-    }, [])
-
     useAnimationFrame(() => 
         setPosition(prevPosition => {
             const newPosition = prevPosition + scroll_speed;
 
-            console.log({ canvas: CANVAS_HEIGHT, position: newPosition })
-            
+            // if moving right and reached end of page
             if (CANVAS_HEIGHT + height < newPosition) {
                 return 0 - height;
+            } else if (0 - height > newPosition) {
+                return CANVAS_HEIGHT + height;
             } else {
-                return newPosition
+                return newPosition;
             }
         })
     )
