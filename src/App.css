@@ -178,10 +178,10 @@ nav img:hover {
 #home {
   height: 100vh;
   min-height: 800px;
-  background-image: url('./assets/images/home-bg.png')
+  /* background-image: url('./assets/images/home-bg.png') */
 }
 
-#home div {
+#home .welcome {
   width: 80%;
   max-width: 700px;
   background-color: #FEFFFF;

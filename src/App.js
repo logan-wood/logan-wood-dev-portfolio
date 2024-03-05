@@ -157,9 +157,9 @@ function App() {
       <div id='page'>
 
         <section id='home'>
-          <div>
+          <div className='welcome'>
             <p>Hi, my name is</p>
-            <h1>Logan Wood</h1>
+            <h1>Logan Wood</h1> 
             <h3>I create captivating digital experiences</h3>
             <button onClick={(e) => {
               $('#portfolio')[0].scrollIntoView({ behavior: 'smooth' })
