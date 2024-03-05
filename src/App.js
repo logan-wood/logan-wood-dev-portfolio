@@ -12,6 +12,10 @@ import spotifyImage from './assets/images/spotify.jpeg';
 import autImage from './assets/images/aut.jpg';
 import { useEffect, useState } from 'react';
 import $ from 'jquery'
+import HorizontalBlock from './assets/components/HorizontalBlock';
+import VerticalBlock from './assets/components/VerticalBlock';
+import { horizontalBlocks } from './assets/data/horizontalBlocks';
+import { verticalBlocks } from './assets/data/verticalBlocks';
 
 
 function App() {
@@ -157,14 +161,41 @@ function App() {
       <div id='page'>
 
         <section id='home'>
-          <div>
+
+          {horizontalBlocks.map((block, index) => {
+            return <HorizontalBlock 
+              key={index} 
+              x={block.x} 
+              y={block.y} 
+              width={block.width} 
+              height={block.height} 
+              color={block.color} 
+              scroll_speed={block.scroll_speed} 
+            />
+          })}
+          
+          {verticalBlocks.map((block, index) => {
+            return <VerticalBlock 
+              key={index} 
+              x={block.x} 
+              y={block.y} 
+              width={block.width} 
+              height={block.height} 
+              color={block.color} 
+              scroll_speed={block.scroll_speed} 
+            />
+          })}
+
+
+          <div className='welcome'>
             <p>Hi, my name is</p>
-            <h1>Logan Wood</h1>
+            <h1>Logan Wood</h1> 
             <h3>I create captivating digital experiences</h3>
             <button onClick={(e) => {
               $('#portfolio')[0].scrollIntoView({ behavior: 'smooth' })
             }}>see my work</button>
           </div>
+
         </section>
 
         <section id='about'>
