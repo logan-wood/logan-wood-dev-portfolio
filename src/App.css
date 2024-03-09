@@ -451,6 +451,7 @@ footer .icon:hover {
 
   nav {
     position: fixed;
+    z-index: 10;
     top: 0;
     right: 0;
   }
