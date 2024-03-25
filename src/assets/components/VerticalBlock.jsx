@@ -43,7 +43,8 @@ function VerticalBlock({x, y, width, height, color, scroll_speed}) {
         height: `${height}px`,
         backgroundColor: color,
         position: 'absolute',
-        zIndex: 0
+        zIndex: 0,
+        overflow: 'hidden',
     }}></div>
 }
 

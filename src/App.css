@@ -436,6 +436,10 @@ footer .icon:hover {
 }
 
 @media screen and (max-width: 900px) {
+  #home {
+    overflow: hidden;
+  }
+
   #page {
     margin-right: 32px;
   }
