@@ -34,11 +34,11 @@ const playlistPresenter = {
 };
 
 const rndProject = {
-    wip: true,
+    wip: false,
     title: 'AUT Final Year Project',
-    description: 'Working with a team of other final year students, we are increasing efficiency and productivity for our client in the Agricultural industry by leveraging vision intelligence and forecasting techniques. Vision intelligence is used to classify baby spinach leaves to assist with quality control, and an array of sensors will be used to predict appropiate machine settings across the packing line.',
+    description: 'Working with a team of other final year students, we\'ve increased efficiency and productivity for our client in the Agricultural industry by leveraging a vision intelligence model. A camera has been set up on the processing line, which provides images to our vision intelligence model, to classify the moisture level of the produce. This information is used to assist in calibrating machine settings on the processing line.',
     preview: autImage,
-    technologies: 'Python ‧ Flask ‧ Tensorflow ‧ Vision Intelligence ‧ Classification ‧ Forecasting',
+    technologies: 'Python ‧ Flask ‧ Tensorflow ‧ Vision Intelligence ‧ Classification',
     url: null,
     github_url: null
 } 

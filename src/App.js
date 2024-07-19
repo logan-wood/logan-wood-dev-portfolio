@@ -177,10 +177,10 @@ function App() {
         <section id='portfolio'>
           <div className='content'>
             <h2>My Portfolio</h2>
+            <PortfolioWork {...rndProject} />
+            <PortfolioWork {...playlistPresenter} />
             <PortfolioWork {...notepadio} />
             <PortfolioWork {...scribblenotes} />
-            <PortfolioWork {...playlistPresenter} />
-            <PortfolioWork {...rndProject} />
           </div>
         </section>
 
