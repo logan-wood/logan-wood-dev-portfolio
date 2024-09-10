@@ -12,7 +12,7 @@ import HorizontalBlock from './assets/components/HorizontalBlock';
 import VerticalBlock from './assets/components/VerticalBlock';
 import { horizontalBlocks } from './assets/data/horizontalBlocks';
 import { verticalBlocks } from './assets/data/verticalBlocks';
-import { rndProject, scribblenotes, playlistPresenter, notepadio } from './assets/data/projects';
+import { rndProject, scribblenotes, playlistPresenter, notepadio, govHack2024} from './assets/data/projects';
 
 function App() {
   const [buttonText, setButtonText] = useState('phone');
@@ -50,7 +50,7 @@ function App() {
 
   function openClientEmail() {
     const email = 'logan.loganwood@gmail.com';
-    const subject = 'Web Development Enquiry';
+    const subject = 'Consultation Enquiry';
     const body = 'Hello, I would like to inquire about your services.';
   
     const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -59,7 +59,7 @@ function App() {
   }
 
   function openPhone() {
-    const phoneNumber = '0226945092';
+    const phoneNumber = '+61433695192';
     window.location.href = `tel:${phoneNumber}`;
     setButtonText(phoneNumber);
   }
@@ -158,9 +158,9 @@ function App() {
             <h2>A little about me...</h2>
             <div className='row'>
               <div className='left-col'>
-                <p>Welcome to my website! My name is Logan, and I've been designing and building web applications for over 5 years. What started in high school as a bit of fun using HTML and CSS to create hilariously awful websites, has turned into a passion for creating visually stunning and user friendly digital experiences.
+                <p>Welcome to my website! My name is Logan, and I've been designing and building applications for over 5 years. I'm most excited about bringing the power of AI to everybody through seamless integration with the applications I develop.
                 <br></br><br></br>
-                Now, I study Software Development and Data Science at university, and have had the privilege of working with a couple great small business owners, creating the perfect digital solution to suit their needs.
+                I'm a recent graduate from the Auckland University of Technology, with new ideas and a fresh perspective to bring to the table. If you or your business are interested in leveraging the power of AI, please do not hesitate to contact me.
                 </p>
                 <button onClick={(e) => {
                   $('#contact')[0].scrollIntoView({ behavior: 'smooth' })
@@ -178,6 +178,7 @@ function App() {
           <div className='content'>
             <h2>My Portfolio</h2>
             <PortfolioWork {...rndProject} />
+            <PortfolioWork {...govHack2024} />
             <PortfolioWork {...playlistPresenter} />
             <PortfolioWork {...notepadio} />
             <PortfolioWork {...scribblenotes} />
@@ -215,7 +216,7 @@ function App() {
             <div className='footer-columns-container'>
               <div>
                 <p>© 2023 Logan Wood</p>
-                <p>logan.loganwood@gmail.com<br></br>0226945092</p>
+                <p>logan.loganwood@gmail.com<br></br>+61433695192</p>
                 <img className='icon' src={githubIcon} alt='github icon' onClick={() => { window.open('https://github.com/logan-wood', '_blank') }}></img>
                 <img className='icon' src={linkedinIcon} alt='linkedin icon' onClick={() => { window.open('https://www.linkedin.com/in/logan-wood-dev/', '_blank') }}></img>
                 <p className='align-bottom'>Thank you for viewing!</p>

@@ -2,6 +2,7 @@ import notepadImage from '../images/notepad-io.jpg';
 import scribblenotesImage from '../images/scribblenotes.jpg';
 import spotifyImage from '../images/spotify.jpeg';
 import autImage from '../images/aut.jpg';
+import hailoImage from '../images/hailo.png';
 
 const notepadio = {
     wip: false,
@@ -43,4 +44,14 @@ const rndProject = {
     github_url: null
 } 
 
-export { rndProject, notepadio, scribblenotes, playlistPresenter }
+const govHack2024 = {
+    wip: false,
+    title: 'HAiLO: Road Safety Advice',
+    description: 'Created as a submission to GovHack 2024, my team and I created an AI powered web application capable of providing reports on the causes of car crashes in a specified area. These reports can be generated from various data sources, and provide suggestions to minimize the risk of further events.',
+    preview: hailoImage,
+    technologies: 'Gemini API ‧ Data Science Methodologies ‧ Prompt Engineering ‧ Python ‧ Flask',
+    url: 'https://hailo-govhack24.onrender.com/',
+    github_url: 'https://github.com/logan-wood/govhack24-best-kase-scenario-HOSTED'
+}
+
+export { rndProject, notepadio, scribblenotes, playlistPresenter, govHack2024 }
