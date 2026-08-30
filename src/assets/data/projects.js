@@ -1,38 +1,27 @@
-import notepadImage from '../images/notepad-io.jpg';
-import scribblenotesImage from '../images/scribblenotes.jpg';
-import spotifyImage from '../images/spotify.jpeg';
 import autImage from '../images/aut.jpg';
 import hailoImage from '../images/hailo.png';
+import jyunbiImage from '../images/jyunbi.png';
 
-const notepadio = {
-    wip: false,
-    title: 'Notepad.io',
-    description: 'Built in collaboration with 4 developers, notepad.io is an online note-taking application designed to retain user attention. A point system is integrated which allows users to play a Pokemon style game while taking notes.',
-    preview: notepadImage,
-    technologies: 'node.js ‧ express ‧ react.js ‧ firebase ‧ tinymce ‧ agile methodologies',
-    url: 'https://github.com/logan-wood/notepad.io',
-    github_url: 'https://github.com/logan-wood/notepad.io'
-};
-
-const scribblenotes = {
-    wip: false,
-    title: 'Scribblenotes',
-    description: 'An all-inclusive web application which is capable of automating business processes - users can create accounts, pay for services and subscriptions through stripe and automatically generate CSV files, all through a user-friendly customer portal. An admin panel is included.',
-    preview: scribblenotesImage,
-    technologies: 'node.js ‧ express ‧ ejs ‧ mysql ‧ stripe ‧ azure ‧ blob storage',
-    url: 'https://github.com/logan-wood/scribblenotes',
-    github_url: 'https://github.com/logan-wood/scribblenotes'
-};
-
-const playlistPresenter = {
+const jyunbi = {
     wip: true,
-    title: 'Spotify Playlist Showcase',
-    description: 'Due to a lack of a way to quickly and effectively summarize a Spotify playlist, I am developing a web app that allows users to showcase their Spotify playlists, with the ability to choose the order of music, segments to play, visuals to show, and the ability to swipe to the next track. Currently in early stages of development.',
-    preview: spotifyImage,
-    technologies: 'react.js ‧ typescript ‧ nest.js ‧ Spotify API & Web Player ‧ mysql',
-    url: 'https://spotify-playlist-showcase-static-client.onrender.com/',
-    github_url: 'https://github.com/logan-wood/Spotify-Playlist-Showcase'
-};
+    title: 'Jyunbi: AI Powered Study Planner',
+    description: 'Jyunbi is an AI powered study planner that allows learners to generate lessons and quizzes using a persisted state of their current progress, areas for improvement, and topics already mastered. This project has an enthesis on product design and market research.',
+    preview: jyunbiImage,
+    technologies: 'AI-Assisted Programming ‧ NestJS ‧ ReactJS ‧ OpenAI API',
+    url: 'https://jlpt-study-app.logan-loganwood.workers.dev/',
+    github_url: null
+}
+
+const govHack2024 = {
+    wip: false,
+    title: 'HAiLO: Road Safety Advice',
+    description: 'A category winner submission in GovHack 2024, my team and I created an AI powered web application capable of providing reports on the causes of car crashes in a specified area. These reports can be generated from various data sources, and provide suggestions to minimize the risk of further events.',
+    preview: hailoImage,
+    technologies: 'Gemini API ‧ Data Science Methodologies ‧ Prompt Engineering ‧ Python ‧ Flask',
+    url: 'https://hailo-govhack24.onrender.com/',
+    github_url: 'https://github.com/logan-wood/govhack24-best-kase-scenario-HOSTED',
+    govhackWinner: true
+}
 
 const rndProject = {
     wip: false,
@@ -42,16 +31,6 @@ const rndProject = {
     technologies: 'Python ‧ Flask ‧ Tensorflow ‧ Vision Intelligence ‧ Classification',
     url: null,
     github_url: null
-} 
-
-const govHack2024 = {
-    wip: false,
-    title: 'HAiLO: Road Safety Advice',
-    description: 'Created as a submission to GovHack 2024, my team and I created an AI powered web application capable of providing reports on the causes of car crashes in a specified area. These reports can be generated from various data sources, and provide suggestions to minimize the risk of further events.',
-    preview: hailoImage,
-    technologies: 'Gemini API ‧ Data Science Methodologies ‧ Prompt Engineering ‧ Python ‧ Flask',
-    url: 'https://hailo-govhack24.onrender.com/',
-    github_url: 'https://github.com/logan-wood/govhack24-best-kase-scenario-HOSTED'
 }
 
-export { rndProject, notepadio, scribblenotes, playlistPresenter, govHack2024 }
+export { jyunbi, rndProject, govHack2024 }

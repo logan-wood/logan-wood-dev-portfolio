@@ -12,7 +12,9 @@ import HorizontalBlock from './assets/components/HorizontalBlock';
 import VerticalBlock from './assets/components/VerticalBlock';
 import { horizontalBlocks } from './assets/data/horizontalBlocks';
 import { verticalBlocks } from './assets/data/verticalBlocks';
-import { rndProject, scribblenotes, playlistPresenter, notepadio, govHack2024} from './assets/data/projects';
+import { rndProject, govHack2024, jyunbi } from './assets/data/projects';
+
+const PHONE_NUMBER = '+61411875036';
 
 function App() {
   const [buttonText, setButtonText] = useState('phone');
@@ -59,9 +61,8 @@ function App() {
   }
 
   function openPhone() {
-    const phoneNumber = '+61433695192';
-    window.location.href = `tel:${phoneNumber}`;
-    setButtonText(phoneNumber);
+    window.location.href = `tel:${PHONE_NUMBER}`;
+    setButtonText(PHONE_NUMBER);
   }
 
   useEffect(() => {
@@ -145,7 +146,7 @@ function App() {
           <div className='welcome'>
             <p>Hi, my name is</p>
             <h1>Logan Wood</h1> 
-            <h3>I create captivating digital experiences</h3>
+            <h3>Full stack software engineer</h3>
             <button onClick={(e) => {
               $('#portfolio')[0].scrollIntoView({ behavior: 'smooth' })
             }}>see my work</button>
@@ -158,9 +159,9 @@ function App() {
             <h2>A little about me...</h2>
             <div className='row'>
               <div className='left-col'>
-                <p>Welcome to my website! My name is Logan, and I've been designing and building applications for over 5 years. I'm most excited about bringing the power of AI to everybody through seamless integration with the applications I develop.
+                <p>Hey, I’m Logan — a full-stack software engineer with a background in building reliable, high-performance applications and improving the systems behind them.
                 <br></br><br></br>
-                I'm a recent graduate from the Auckland University of Technology, with new ideas and a fresh perspective to bring to the table. If you or your business are interested in leveraging the power of AI, please do not hesitate to contact me.
+                Over the past few years, I’ve worked across areas including distributed systems, APIs, cloud infrastructure, performance optimisation, and developer practices. I enjoy tackling complex problems, understanding how systems behave at scale, and finding practical ways to make both the software and the way teams build it better.
                 </p>
                 <button onClick={(e) => {
                   $('#contact')[0].scrollIntoView({ behavior: 'smooth' })
@@ -177,11 +178,9 @@ function App() {
         <section id='portfolio'>
           <div className='content'>
             <h2>My Portfolio</h2>
-            <PortfolioWork {...rndProject} />
+            <PortfolioWork {...jyunbi} />
             <PortfolioWork {...govHack2024} />
-            <PortfolioWork {...playlistPresenter} />
-            <PortfolioWork {...notepadio} />
-            <PortfolioWork {...scribblenotes} />
+            <PortfolioWork {...rndProject} />
           </div>
         </section>
 
@@ -215,8 +214,8 @@ function App() {
 
             <div className='footer-columns-container'>
               <div>
-                <p>© 2023 Logan Wood</p>
-                <p>logan.loganwood@gmail.com<br></br>+61433695192</p>
+                <p>© 2026 Logan Wood</p>
+                <p>logan.loganwood@gmail.com<br></br>{PHONE_NUMBER}</p>
                 <img className='icon' src={githubIcon} alt='github icon' onClick={() => { window.open('https://github.com/logan-wood', '_blank') }}></img>
                 <img className='icon' src={linkedinIcon} alt='linkedin icon' onClick={() => { window.open('https://www.linkedin.com/in/logan-wood-dev/', '_blank') }}></img>
                 <p className='align-bottom'>Thank you for viewing!</p>
